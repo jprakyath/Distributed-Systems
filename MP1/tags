@@ -1,0 +1,137 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CFLAGS	Makefile	/^CFLAGS =  -Wall -g$/;"	m
+DEBUGLOG	stdincludes.h	26;"	d
+DROP_MSG	params.h	/^int DROP_MSG;$/;"	v
+DUMMYLASTMSGTYPE	mp1_node.h	/^		DUMMYLASTMSGTYPE$/;"	e	enum:Msgtypes
+EM	emulnet.h	/^struct EM{$/;"	s
+ENBUFFSIZE	emulnet.h	17;"	d
+EN_GPSZ	params.h	/^int EN_GPSZ;			\/* actual number of peers. *\/$/;"	v
+ENcleanup	emulnet.c	/^int ENcleanup(){$/;"	f
+ENinit	emulnet.c	/^void *ENinit(struct address *myaddr, short port, char *joinaddr){$/;"	f
+ENp2psend	emulnet.c	/^int ENp2psend(struct address *myaddr, struct address *toaddr, char *data, int size){$/;"	f
+ENrecv	emulnet.c	/^int ENrecv(struct address *myaddr, int (* enq)(void *, char *, int), struct timeval *t, int times, void *env){$/;"	f
+JOINADDR	mp1_node.h	/^char JOINADDR[30];                    \/* address for introduction into the group. *\/$/;"	v
+JOINREP	mp1_node.h	/^		JOINREP,$/;"	e	enum:Msgtypes
+JOINREQ	mp1_node.h	/^		JOINREQ,			$/;"	e	enum:Msgtypes
+LOG	log.c	/^void LOG(address *addr, char * str, ...){$/;"	f
+Lkupstatus	requests.h	/^enum Lkupstatus { RFULL,RQUEUED,RFAIL };$/;"	g
+MAXQUEUESIZE	queue.h	15;"	d
+MAXWRITES	log.c	11;"	d	file:
+MAX_MSG_SIZE	params.h	/^int MAX_MSG_SIZE;$/;"	v
+MAX_NNB	params.h	/^int MAX_NNB;                \/\/ max number of neighbors$/;"	v
+MAX_NODES	emulnet.c	12;"	d	file:
+MAX_TIME	emulnet.c	13;"	d	file:
+MPcleanup	MPtemplate.h	/^int (*MPcleanup)();$/;"	v
+MPinit	MPtemplate.h	/^void *(*MPinit)(struct address *, short, char *);$/;"	v
+MPp2psend	MPtemplate.h	/^int (*MPp2psend)(struct address *, struct address *addr, char *data, int size);$/;"	v
+MPrecv	MPtemplate.h	/^int (*MPrecv)(struct address *myaddr, int (* enq)(void *, char *, int), struct timeval *t, int times, void *env);$/;"	v
+MSG_DROP_PROB	params.h	/^double MSG_DROP_PROB;		\/\/ message drop probability$/;"	v
+Msgtypes	mp1_node.h	/^enum Msgtypes{$/;"	g
+NULLADDR	mp1_node.c	/^char NULLADDR[] = {0,0,0,0,0,0};$/;"	v
+NullDevice	submit.py	/^class NullDevice:$/;"	c
+PORTNUM	params.c	/^short PORTNUM = 8001;$/;"	v
+Process_joinrep	mp1_node.c	/^void Process_joinrep(void *env, char *data, int size)$/;"	f
+Process_joinreq	mp1_node.c	/^void Process_joinreq(void *env, char *data, int size)$/;"	f
+QEMPTY	queue.h	/^enum queuestatus{QSUCCESS, QFULL, QEMPTY};$/;"	e	enum:queuestatus
+QFULL	queue.h	/^enum queuestatus{QSUCCESS, QFULL, QEMPTY};$/;"	e	enum:queuestatus
+QSUCCESS	queue.h	/^enum queuestatus{QSUCCESS, QFULL, QEMPTY};$/;"	e	enum:queuestatus
+RFAIL	requests.h	/^enum Lkupstatus { RFULL,RQUEUED,RFAIL };$/;"	e	enum:Lkupstatus
+RFULL	requests.h	/^enum Lkupstatus { RFULL,RQUEUED,RFAIL };$/;"	e	enum:Lkupstatus
+RQUEUED	requests.h	/^enum Lkupstatus { RFULL,RQUEUED,RFAIL };$/;"	e	enum:Lkupstatus
+SINGLE_FAILURE	params.h	/^int SINGLE_FAILURE;			\/\/ single\/multi failure$/;"	v
+STDCLLBKARGS	mp1_node.h	/^STDCLLBKRET Process_joinrep STDCLLBKARGS;$/;"	v
+STDCLLBKARGS	mp1_node.h	/^STDCLLBKRET Process_joinreq STDCLLBKARGS;$/;"	v
+STDCLLBKARGS	stdincludes.h	24;"	d
+STDCLLBKRET	stdincludes.h	25;"	d
+STEP_RATE	params.h	/^double STEP_RATE;		\/* dictates the rate of insertion. *\/$/;"	v
+URL	submit.py	/^URL = 'cloudcomputing-001'$/;"	v
+_APP_H_	app.h	11;"	d
+_DEBUG_H_	log.h	11;"	d
+_EMULNET_H_	emulnet.h	11;"	d
+_GNU_SOURCE	stdincludes.h	13;"	d
+_MPTEMPLATE_H_	MPtemplate.h	11;"	d
+_NODE_H_	mp1_node.h	13;"	d
+_PARAMS_H_	params.h	11;"	d
+_QUEUE_H_	queue.h	11;"	d
+_REQUESTS_H_	requests.h	11;"	d
+_STDINCLUDES_H_	stdincludes.h	11;"	d
+__NODEADDR_H_	nodeaddr.h	11;"	d
+addr	mp1_node.h	/^        struct address addr;            \/\/ my address$/;"	m	struct:member	typeref:struct:member::address
+addr	nodeaddr.h	/^	char addr[6];$/;"	m	struct:address
+address	nodeaddr.h	/^typedef struct address{$/;"	s
+address	nodeaddr.h	/^} address;$/;"	t	typeref:struct:address
+basicPrompt	submit.py	/^def basicPrompt():$/;"	f
+bfailed	mp1_node.h	/^        int bfailed;                    \/\/ boolean indicating if this member has failed$/;"	m	struct:member
+buff	emulnet.h	/^	en_msg *buff[ENBUFFSIZE];$/;"	m	struct:EM
+challengeResponse	submit.py	/^def challengeResponse(email, passwd, challenge):$/;"	f
+challenge_url	submit.py	/^def challenge_url():$/;"	f
+checkmsgs	mp1_node.c	/^void checkmsgs(member *node){$/;"	f
+contains	Grader.sh	/^function contains () {$/;"	f
+currbuffsize	emulnet.h	/^	int currbuffsize;$/;"	m	struct:EM
+dequeue	queue.c	/^void *dequeue(queue *q, int *sz){$/;"	f
+destroyqueue	queue.c	/^int destroyqueue(queue *q){$/;"	f
+dropmsg	params.h	/^int dropmsg;$/;"	v
+elt	queue.h	/^	void *elt;$/;"	m	struct:q_elt
+emulnet	emulnet.h	/^struct EM emulnet;$/;"	v	typeref:struct:EM
+en_msg	emulnet.h	/^typedef struct en_msg{$/;"	s
+en_msg	emulnet.h	/^} en_msg;$/;"	t	typeref:struct:en_msg
+enqueue	queue.c	/^int enqueue(queue *q, void *elt, int size){$/;"	f
+enqueue_wrppr	mp1_node.c	/^int enqueue_wrppr(void *env, char *buff, int size){    return enqueue((queue *)env, buff, size);}$/;"	f
+finishup_thisnode	mp1_node.c	/^int finishup_thisnode(member *node){$/;"	f
+firsteltindex	emulnet.h	/^	int firsteltindex;$/;"	m	struct:EM
+from	emulnet.h	/^	address from;		\/* src node *\/$/;"	m	struct:en_msg
+getChallenge	submit.py	/^def getChallenge(email, sid):$/;"	f
+getcurrtime	params.c	/^int getcurrtime(){$/;"	f
+getjoinaddr	mp1_node.c	/^address getjoinaddr(void){$/;"	f
+globaltime	params.h	/^int globaltime;$/;"	v
+group	app.h	/^member *group;$/;"	v
+ingroup	mp1_node.h	/^        int ingroup;                    \/\/ boolean indiciating if this member is in the group$/;"	m	struct:member
+init_thisnode	mp1_node.c	/^int init_thisnode(member *thisnode, address *joinaddr){$/;"	f
+inited	mp1_node.h	/^        int inited;                     \/\/ boolean indicating if this member is up$/;"	m	struct:member
+initqueue	queue.c	/^int initqueue(queue *q){$/;"	f
+inmsgq	mp1_node.h	/^        queue inmsgq;                   \/\/ queue for incoming messages$/;"	m	struct:member
+introduceselftogroup	mp1_node.c	/^int introduceselftogroup(member *node, address *joinaddr){$/;"	f
+isnulladdr	mp1_node.c	/^int isnulladdr( address *addr){$/;"	f
+logNodeAdd	log.c	/^void logNodeAdd(address *thisNode, address *addedAddr)$/;"	f
+logNodeRemove	log.c	/^void logNodeRemove(address *thisNode, address *removedAddr)$/;"	f
+loginPrompt	submit.py	/^def loginPrompt():$/;"	f
+main	app.c	/^int main(int argc, char *argv[]){$/;"	f
+member	mp1_node.h	/^typedef struct member{            $/;"	s
+member	mp1_node.h	/^} member;$/;"	t	typeref:struct:member
+messagehdr	mp1_node.h	/^typedef struct messagehdr{ 	$/;"	s
+messagehdr	mp1_node.h	/^} messagehdr;$/;"	t	typeref:struct:messagehdr
+msgtype	mp1_node.h	/^	enum Msgtypes msgtype;$/;"	m	struct:messagehdr	typeref:enum:messagehdr::Msgtypes
+nextid	emulnet.h	/^	int nextid;			\/* max id assigned so far *\/$/;"	m	struct:EM
+nodeloop	mp1_node.c	/^void nodeloop(member *node){$/;"	f
+nodeloopops	mp1_node.c	/^void nodeloopops(member *node){$/;"	f
+nodestart	mp1_node.c	/^void nodestart(member *node, char *servaddrstr, short servport){$/;"	f
+outFiles	submit.py	/^outFiles = ['dbg.log', 'dbg.log', 'dbg.log'] $/;"	v
+partFriendlyNames	submit.py	/^partFriendlyNames = ['Single Failure', 'Multiple Failure', 'Message Drop Single Failure'] $/;"	v
+partIds	submit.py	/^partIds = ['mp1_part1', 'mp1_part2', 'mp1_part3']$/;"	v
+partPrompt	submit.py	/^def partPrompt():$/;"	f
+q	queue.h	/^	q_elt q[MAXQUEUESIZE];$/;"	m	struct:queue
+q_elt	queue.h	/^typedef struct q_elt{$/;"	s
+q_elt	queue.h	/^} q_elt;$/;"	t	typeref:struct:q_elt
+qleft	queue.h	/^	int qleft, qright;		\/* all elements are in qleft...qright-1 modulo MAXQUEUESIZE *\/$/;"	m	struct:queue
+qright	queue.h	/^	int qleft, qright;		\/* all elements are in qleft...qright-1 modulo MAXQUEUESIZE *\/$/;"	m	struct:queue
+queue	queue.h	/^typedef struct queue{$/;"	s
+queue	queue.h	/^} queue;$/;"	t	typeref:struct:queue
+queuestatus	queue.h	/^enum queuestatus{QSUCCESS, QFULL, QEMPTY};$/;"	g
+recv_callback	mp1_node.c	/^int recv_callback(void *env, char *data, int size){$/;"	f
+recv_msgs	emulnet.c	/^static int recv_msgs[MAX_NODES + 1][MAX_TIME];$/;"	v	file:
+recvloop	mp1_node.c	/^int recvloop(member *node){$/;"	f
+sent_msgs	emulnet.c	/^static int sent_msgs[MAX_NODES + 1][MAX_TIME];$/;"	v	file:
+setparams	params.c	/^void setparams(char *config_file){$/;"	f
+size	emulnet.h	/^	int size;			\/* num.	of bytes after the struct *\/$/;"	m	struct:en_msg
+size	queue.h	/^	int size;$/;"	m	struct:q_elt
+source	submit.py	/^def source(partIdx):$/;"	f
+submit	submit.py	/^def submit():   $/;"	f
+submitSolution	submit.py	/^def submitSolution(email_address, ch_resp, sid, output, state, ch_aux):$/;"	f
+submit_url	submit.py	/^def submit_url():$/;"	f
+to	emulnet.h	/^	address to;			\/* dest node *\/$/;"	m	struct:en_msg
+write	submit.py	/^  def write(self, s):$/;"	m	class:NullDevice
